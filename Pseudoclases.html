@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses</title>
+    <style>
+        a:link {
+            color: palevioletred;
+        }
+        a:visited {
+            color: red;
+        }
+        a:hover {
+            background-color: aquamarine;
+        }
+        p:not(.maravillas) {
+            color: blueviolet;
+        }
+        .container div:nth-child(1){
+            /* el primer hijo de container */
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <a href="/">Alicia</a>
+    <p>en el</p>
+    <p class="maravillas">país</p>
+    <div class="container">
+        <div>Text</div>
+        <div>Text</div>
+        <div>Text</div>
+        <div>Text</div>
+    </div>
+</body>
+</html>
